@@ -1,7 +1,7 @@
-export function addedFeature() {
-    return { type: 'ADDED_FEATURE'};
+export function addedFeature(newFeature) {
+    return { type: 'ADDED_FEATURE', payload: newFeature };
 }
 
-export function additionalFeature() {
-    return { type: 'ADDITIONAL_FEATURE'};
+export const additionalFeature = (newFeature) => {
+    return { type: 'ADDITIONAL_FEATURE', payload: newFeature }
 }
